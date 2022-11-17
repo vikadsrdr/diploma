@@ -1,0 +1,169 @@
+// @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;900&display=swap');
+
+.work_container {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    justify-items: center;
+}
+
+.work_subcontainer {
+    width: 1510px;
+    display: grid;
+    grid-template: repeat(2, 340px) / repeat(4, 379px);
+}
+
+.work_subcontainer img {
+
+    @include workWidthHeight;
+}
+
+.work-wrapper {
+
+    @include workWidthHeight;
+    background-image: url(../images/work_.png);
+}
+
+.work-wrapper h4 {
+    font-family: Raleway, sans-serif;
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 21px;
+    text-align: center;
+    color: $textCol;
+    padding-top: 77px;
+    margin-bottom: 14px;
+    text-transform: uppercase;
+}
+
+.work-wrapper h5 {
+    font-family: Raleway, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    text-align: center;
+    color: $textCol;
+    text-transform: capitalize;
+}
+
+.work-wrapper h4,
+.work-wrapper h5 {
+    display: none;
+}
+
+
+.work-wrapper:hover {
+    background-image: url(../images/work_3.png);
+    @include workWidthHeight;
+    cursor: pointer;
+}
+
+.work-wrapper:active {
+    background-image: url(../images/work_active.png);
+    @include workWidthHeight;
+    cursor: pointer;
+}
+
+
+@media screen and (min-width: 667px) and (max-width: 1024px) {
+
+    .work_container {
+        width: 1024px;
+    }
+
+    .work_subcontainer {
+        width: 1024px;
+        grid-template: repeat(2, 230px) / repeat(4, 256px);
+    }
+
+    .work_subcontainer img {
+        @include workWidthHeightTabl;
+    }
+
+    .work-wrapper {
+        @include workWidthHeightTabl;
+        background-size: cover;
+    }
+
+    .work-wrapper:hover {
+        background-image: url(images/work_.png);
+        @include workWidthHeightTabl;
+        background-size: cover;
+    }
+
+    .work-wrapper-backgrond {
+        @include workWidthHeightTabl;
+        background: linear-gradient(0deg, rgba(255, 67, 67, 0.8), rgba(255, 67, 67, 0.8));
+        opacity: 0;
+    }
+
+    .work-wrapper-backgrond:hover {
+        opacity: .9;
+    }
+
+    .work-wrapper-backgrond:active {
+        opacity: .9;
+        background: linear-gradient(0deg, rgba(185, 12, 12, 0.8), rgba(185, 12, 12, 0.8));
+    }
+
+
+    .work-wrapper:hover h4,
+    .work-wrapper:hover h5,
+    .work-wrapper:active h4,
+    .work-wrapper:active h5 {
+        display: block;
+    }
+}
+
+// посмотреть про адаптацию картинок 
+
+@media screen and (max-width: 480px) {
+
+    .work_subcontainer {
+        width: 320px;
+        grid-template: repeat(4, 144px) / repeat(2, 160px);
+    }
+
+    .work_subcontainer img {
+        @include workWidthHeightMob;
+    }
+
+    .work-wrapper {
+        @include workWidthHeightMob;
+        background-size: cover;
+    }
+
+    .work-wrapper:hover {
+        background-image: url(../images/work_.png);
+        @include workWidthHeightMob;
+        background-size: cover;
+    }
+
+    .work-wrapper-backgrond {
+        @include workWidthHeightMob;
+        background: linear-gradient(0deg, rgba(255, 67, 67, 0.8), rgba(255, 67, 67, 0.8));
+        opacity: 0;
+    }
+
+    .work-wrapper-backgrond:hover {
+        opacity: .9;
+    }
+
+    .work-wrapper-backgrond:active {
+        opacity: .9;
+        background: linear-gradient(0deg, rgba(185, 12, 12, 0.8), rgba(185, 12, 12, 0.8));
+    }
+
+
+    .work-wrapper:hover h4,
+    .work-wrapper:hover h5,
+    .work-wrapper:active h4,
+    .work-wrapper:active h5 {
+        display: block;
+    }
+
+    .work-wrapper h4 {
+        padding-top: 46px;
+        margin-bottom: 4px;
+    }
+}

@@ -1,0 +1,160 @@
+// @import url('https://fonts.googleapis.com/css2?family=Cardo:ital@1&family=Raleway:wght@700&display=swap');
+
+.testimonials-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .testimonials-container__wrapper {
+
+        width: 1510px;
+
+        .testimonials-subcontainer {
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-image: url(../images/background.png);
+
+            img[alt="people"] {
+
+                height: 490px;
+                width: 741px;
+            }
+
+            .testimonials-subcontainer__background {
+                margin-right: 170px;
+
+                h2 {
+                    font-family: Cardo, serif;
+                    font-size: 36px;
+                    font-weight: 400;
+                    line-height: 49px;
+                    text-align: left;
+                    height: 230px;
+                    width: 471px;
+                    color: $textCol;
+                    text-transform: capitalize;
+                }
+
+                h6 {
+                    font-family: Raleway, sans-serif;
+                    font-size: 13px;
+                    font-weight: 700;
+                    line-height: 15px;
+                    text-align: left;
+                    color: $textCol;
+                    text-transform: uppercase;
+                }
+            } 
+        }
+
+        .testimonials-container__img-container img {
+            display: block;
+            margin: auto;
+            margin-top: 31px;
+        }
+    }
+}
+
+@media screen and (min-width: 667px) and (max-width: 1024px) {
+
+    .testimonials-container {
+        width: 1024px;
+        height: 332px;
+
+        .testimonials-container__wrapper {
+            width: 1024px;
+            height: 332px;
+
+            .testimonials-subcontainer {
+                width: 1024px;
+                height: 332px;
+                
+                img[alt="people"] {
+
+                    height: 332px;
+                    width: 502px;
+                }
+
+                .testimonials-subcontainer__background {
+                    margin-right: 104px;
+
+                    h2 {
+                        font-size: 24px;
+                        line-height: 32px;
+                        height: 156px;
+                        width: 330px;
+                    }
+
+                    h6 {
+                        font-size: 12px;
+                        line-height: 14px;
+                        height: 19px;
+                    }
+                }
+            }
+
+            .testimonials-container__img-container img {
+                margin-top: 24px;
+                width: 150px;
+                height: 13px;
+            }
+        }
+    }
+}
+
+
+
+@media screen and (max-width: 480px) {
+    .testimonials-container {
+        width: 100%;
+        margin: auto;
+
+        .testimonials-container__wrapper {
+            width: 100%;
+            margin: auto;
+
+            .testimonials-subcontainer {
+                width: 100%;
+                flex-direction: column;
+                
+                img[alt="people"] {
+                    height: 212px;
+                    width: 320px;
+                }
+
+                .testimonials-subcontainer__background {
+                    margin-right: 0px;
+                    margin: auto;
+
+                    h2 {
+                        font-size: 24px;
+                        line-height: 32px;
+                        height: 206px;
+                        width: 275px;
+                        padding-top: 30px;
+                        text-align: center;
+                    }
+
+                    h6 {
+                        font-size: 12px;
+                        line-height: 14px;
+                        height: 25px;
+                        width: 275px;
+                        margin-bottom: 95px;
+                        margin-top: 10px;
+                    }
+                }
+            }
+
+            .testimonials-container__img-container img {
+                margin-top: 23px;
+                width: 130px;
+                height: 11px;
+            }
+        }
+    }
+}

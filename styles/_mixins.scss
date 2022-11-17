@@ -1,0 +1,284 @@
+@mixin button {
+    height: 77px;
+    width: 369px;
+    background: $color;
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 28px;
+    text-align: center;
+    color: $textCol;
+    border: 0.5px solid $color;
+    text-transform: uppercase;
+    display: block;
+    margin: auto;
+    margin-bottom: 120px;
+    margin-top: 80px;
+
+    &:hover {
+        height: 77px;
+        width: 369px;
+        background: #E71414;
+        font-size: 24px;
+        font-weight: 900;
+        line-height: 28px;
+        text-align: center;
+        color: $textCol;
+        border: 0.5px solid $color;
+        text-transform: uppercase;
+        display: block;
+        margin: auto;
+        margin-bottom: 120px;
+        margin-top: 80px;
+    }
+
+    &:active {
+        height: 77px;
+        width: 369px;
+        background: $color;
+        font-size: 24px;
+        font-weight: 900;
+        line-height: 28px;
+        text-align: center;
+        color: $textCol;
+        border: 0.5px solid $color;
+        text-transform: uppercase;
+        display: block;
+        margin: auto;
+        margin-bottom: 120px;
+        margin-top: 80px;
+        box-shadow: 4px 4px 30px 0px rgba(255, 67, 67, 1);
+    }
+}
+
+@mixin buttonMobile {
+    height: 58px;
+    width: 279px;
+    background: $color;
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 28px;
+    text-align: center;
+    color: $textCol;
+    border: 0.5px solid $color;
+    text-transform: uppercase;
+    display: block;
+    margin: auto;
+    margin-bottom: 52px;
+    margin-top: 51px;
+
+    &:hover {
+        height: 58px;
+        width: 279px;
+        background: #E71414;
+        font-size: 24px;
+        font-weight: 900;
+        line-height: 28px;
+        text-align: center;
+        color: $textCol;
+        border: 0.5px solid $color;
+        text-transform: uppercase;
+        display: block;
+        margin: auto;
+        margin-bottom: 52px;
+        margin-top: 51px;
+    }
+
+    &:active {
+        height: 58px;
+        width: 279px;
+        background: $color;
+        font-size: 24px;
+        font-weight: 900;
+        line-height: 28px;
+        text-align: center;
+        color: $textCol;
+        border: 0.5px solid $color;
+        text-transform: uppercase;
+        display: block;
+        margin: auto;
+        margin-bottom: 52px;
+        margin-top: 51px;
+        box-shadow: 4px 4px 30px 0px rgba(255, 67, 67, 1);
+    }
+}
+
+@mixin buttonDown {
+    height: 77px;
+    width: 369px;
+    background: $color;
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 28px;
+    text-align: center;
+    color: $textCol;
+    border: 0.5px solid $color;
+    text-transform: uppercase;
+    display: block;
+    margin: auto;
+    margin-top: 50px;
+
+    &:hover {
+        height: 77px;
+        width: 369px;
+        background: #E71414;
+        font-size: 24px;
+        font-weight: 900;
+        line-height: 28px;
+        text-align: center;
+        color: $textCol;
+        border: 0.5px solid $color;
+        text-transform: uppercase;
+        display: block;
+        margin: auto;
+        margin-top: 50px;
+    }
+
+    &:active {
+        height: 77px;
+        width: 369px;
+        background: $color;
+        font-size: 24px;
+        font-weight: 900;
+        line-height: 28px;
+        text-align: center;
+        color: $textCol;
+        border: 0.5px solid $color;
+        text-transform: uppercase;
+        display: block;
+        margin: auto;
+        margin-top: 50px;
+        box-shadow: 4px 4px 30px 0px rgba(255, 67, 67, 1);
+    }
+}
+
+@mixin buttonDownTabl {
+    height: 80px;
+    width: 314px;
+    background: $color;
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 21px;
+    text-align: center;
+    color: $textCol;
+    border: 0.5px solid $color;
+    text-transform: uppercase;
+    display: block;
+    margin: auto;
+    // margin-top: 50px;
+
+    &:hover {
+        height: 80px;
+        width: 314px;
+        background: #E71414;
+        font-size: 18px;
+        font-weight: 900;
+        line-height: 21px;
+        text-align: center;
+        color: $textCol;
+        border: 0.5px solid $color;
+        text-transform: uppercase;
+        display: block;
+        margin: auto;
+        // margin-top: 50px;
+    }
+
+    &:active {
+        height: 80px;
+        width: 314px;
+        background: $color;
+        font-size: 18px;
+        font-weight: 900;
+        line-height: 21px;
+        text-align: center;
+        color: $textCol;
+        border: 0.5px solid $color;
+        text-transform: uppercase;
+        display: block;
+        margin: auto;
+        // margin-top: 50px;
+        box-shadow: 4px 4px 30px 0px rgba(255, 67, 67, 1);
+    }
+}
+
+@mixin buttonDownMobile {
+    height: 80px;
+    width: 279px;
+    background: $color;
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 21px;
+    text-align: center;
+    color: $textCol;
+    border: 0.5px solid $color;
+    text-transform: uppercase;
+    display: block;
+    margin: auto;
+    // margin-top: 50px;
+
+    &:hover {
+        height: 80px;
+        width: 279px;
+        background: #E71414;
+        font-size: 18px;
+        font-weight: 900;
+        line-height: 21px;
+        text-align: center;
+        color: $textCol;
+        border: 0.5px solid $color;
+        text-transform: uppercase;
+        display: block;
+        margin: auto;
+        // margin-top: 50px;
+    }
+
+    &:active {
+        height: 80px;
+        width: 279px;
+        background: $color;
+        font-size: 18px;
+        font-weight: 900;
+        line-height: 21px;
+        text-align: center;
+        color: $textCol;
+        border: 0.5px solid $color;
+        text-transform: uppercase;
+        display: block;
+        margin: auto;
+        // margin-top: 50px;
+        box-shadow: 4px 4px 30px 0px rgba(255, 67, 67, 1);
+    }
+}
+
+
+
+@mixin separator($link, $hover, $active) {
+    color: $link;
+
+    &:hover {
+        color: $hover;
+        border-bottom: $sepBorderhoov;
+    }
+
+    &:active {
+        color: $active;
+        border-bottom: $sepBorderact;
+    }
+
+}
+
+
+@mixin workWidthHeight {
+    width: 379px;
+    height: 340px;
+}
+
+@mixin workWidthHeightTabl {
+    width: 256px;
+    height: 230px;
+}
+
+@mixin workWidthHeightMob {
+    width: 160px;
+    height: 144px;
+}
+
